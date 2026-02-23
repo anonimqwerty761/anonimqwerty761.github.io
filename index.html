@@ -958,7 +958,7 @@
         ];
         
         const songs = [
-            "Папа может всё что угодно",
+            "Тишины хочу",
             "Песня про папу",
             "Папа, подари мне куклу",
             "Мой папа хороший"
@@ -1090,7 +1090,7 @@
             isPlaying = !isPlaying;
             document.getElementById('playBtn').textContent = isPlaying ? '⏸️' : '▶️';
             if(isPlaying) {
-                // Здесь можно добавить реальное воспроизведение музыки
+                <source src="$currentSongIndex.mp3" type="audio/mpeg">
                 console.log('Музыка играет');
             }
         }
@@ -1226,7 +1226,7 @@
         
         // ========== ВОЗРАСТ ==========
         function calculateAge() {
-            const birthYear = 1983; // Год рождения папы
+            const birthYear = 1982; // Год рождения папы
             const age = new Date().getFullYear() - birthYear;
             document.getElementById('dadAge').textContent = age;
         }
