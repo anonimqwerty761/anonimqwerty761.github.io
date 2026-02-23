@@ -958,7 +958,7 @@
         ];
         
         const songs = [
-            "Тишины хочу",
+            "Тишины хочу -- Антиреспект",
             "Песня про папу",
             "Папа, подари мне куклу",
             "Мой папа хороший"
@@ -1090,7 +1090,7 @@
             isPlaying = !isPlaying;
             document.getElementById('playBtn').textContent = isPlaying ? '⏸️' : '▶️';
             if(isPlaying) {
-                <source src="$currentSongIndex.mp3" type="audio/mpeg">
+                <source src="/sounds/${currentSongIndex}.mp3" type="audio/mpeg">
                 console.log('Музыка играет');
             }
         }
